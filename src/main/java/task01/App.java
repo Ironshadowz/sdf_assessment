@@ -72,7 +72,7 @@ public class App
             }            
             if(last%1 !=0)
             {
-                System.out.println(last);
+                System.out.printf("%.2f \n",last);
             } else 
             {
                 int x = (int)last;
