@@ -52,6 +52,7 @@ public class App
                 System.err.println("Incorrect input or spacing");
                 continue;
             }
+           
             if(hold.get(1).equals("+"))
             {
                 last = firstNum + secondNum;
@@ -64,7 +65,11 @@ public class App
             } else if(hold.get(1).equals("*"))
             {
                 last = firstNum * secondNum;
-            } 
+            } else
+            {
+                System.out.println("Incorrect operator");
+                continue;
+            }            
             if(last%1 !=0)
             {
                 System.out.println(last);
